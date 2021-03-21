@@ -7107,6 +7107,11 @@ tar@^2.0.0:
     fstream "^1.0.12"
     inherits "2"
 
+tassign@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tassign/-/tassign-1.0.0.tgz#a768f9875a0fccc15f03d68b4ac02060415e479d"
+  integrity sha1-p2j5h1oPzMFfA9aLSsAgYEFeR50=
+
 temp@0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/temp/-/temp-0.8.3.tgz#e0c6bc4d26b903124410e4fed81103014dfc1f59"
