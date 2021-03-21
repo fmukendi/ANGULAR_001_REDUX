@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { NgRedux, NgReduxModule } from "ng2-redux";
+import { fromJS} from 'immutable';
 
 import { IAppState, rootReducer, INITIAL_STATE } from "./store";
 
