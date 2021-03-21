@@ -1,5 +1,6 @@
 import { NgRedux, select } from "ng2-redux";
 import { Component } from "@angular/core";
+import { Map } from "immutable";
 
 import { IAppState, rootReducer } from "./store";
 import { INCREMENT } from "./action";
@@ -13,12 +14,17 @@ export class AppComponent {
   title = "app works!";
   // counter = 0;
   // @select() counter;
-  @select('counter') count;
-  @select(['messaging', 'newMessages']) newMessages;
-  // messaging.newMessages
-  @select((s: IAppState)=> s.messaging.newMessages) newMessagesCount;
+  // @select("counter") count;
+  // @select(["messaging", "newMessages"]) newMessages;
+  // // messaging.newMessages
+  // @select((s: IAppState) => s.messaging.newMessages) newMessagesCount;
+  // @select("counter") count; // state.get('count') // update on it online
+  @select((s) => s.get("counter")) count;
+  @select((s) => s.get("messaging").get("newMessages")) newMessages;
+  @select((s) => s.get("messaging").get("newMessages")) newMessagesCount;
 
-  constructor(private ngRedux: NgRedux<IAppState>) {
+  constructor(private ngRedux: NgRedux<Map<string, any>>) {
+    // constructor(private ngRedux: NgRedux<IAppState>) {
     // problem below is that you'll have to unsubscribe
     // no need if you use an async pipe with,
     // and with select, no need for code below

@@ -3,7 +3,6 @@
 npm i ng2-redux --save
 npm install tassign --save
 npm install immutable --save
-yarn add immutable 
 
 
 # ReduxDemo
