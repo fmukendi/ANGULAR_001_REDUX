@@ -1,9 +1,27 @@
-<h1>
-  {{title}}
-</h1>
-<!-- <p>Counter: {{ counter }} </p> -->
-<!-- <p>Counter: {{ counter | async }} </p> -->
-<p>Counter: {{ count | async }} </p>
-<p>NewMessages: {{ newMessages | async }} </p>
-<p>newMessagesCount: {{ newMessagesCount | async }} </p>
-<button (click)="increment()">Increment</button>
+<div class="container">
+  <div class="item">
+    <button (click)="removeTodo(t)">Remove</button>
+  </div>
+  <div class="item2">
+    <div class="item2__1">
+      <h1>Todo List</h1>
+      <!-- <p>Counter: {{ counter }} </p> -->
+      <!-- <p>Counter: {{ counter | async }} </p> -->
+      <p>Counter: {{ count| async }}</p>
+      <p>NewMessages: {{ newMessages | async }}</p>
+      <p>newMessagesCount: {{ newMessagesCount | async }}</p>
+      <div><button (click)="increment()">+</button></div>
+      <ul class="todos">
+        <li *ngFor="let t of todos | async" class="todo">
+          <span (click)="toggleTodo(t)" [class.completed]="t.isCompleted">{{
+            t.title
+          }}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="item2__2">
+      <input type="text" />
+    </div>
+  </div>
+  <div class="item"><button (click)="addTodo(title)">Add</button></div>
+</div>

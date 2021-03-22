@@ -1,0 +1,49 @@
+
+  
+  .container {
+    background-color: #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+  }
+  
+  .item {
+    background-color: yellow;
+    padding: 40px; 
+    margin: 30px; 
+    color: #fff;
+    font-size: 40px;
+  }
+  
+  .item2 {
+    background-color: #f1425d;
+    padding: 40px;
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    &__1 {
+      background-color: blue;
+      padding: 40px; 
+      margin: 30px;
+      color: #fff;
+      font-size: 40px;
+    }
+    &__2 {
+      background-color: green;
+      padding: 40px; 
+      margin: 30px; 
+      color: #fff;
+      font-size: 40px;
+    }
+  
+    .item3 {
+      display: flex;
+      align-self: center;
+    }
+  }
+  

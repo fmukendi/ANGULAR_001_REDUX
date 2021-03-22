@@ -4,6 +4,8 @@ npm i ng2-redux --save
 npm install tassign --save
 npm install immutable --save
 
+chrome redux devtools
+
 
 # ReduxDemo
 
