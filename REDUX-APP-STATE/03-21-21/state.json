@@ -1,0 +1,4 @@
+{
+	"payload": "[{\"type\":\"INCREMENT\"},{\"type\":\"ADD_TODO\",\"title\":\"sadadsa\"},{\"type\":\"ADD_TODO\",\"title\":\"asdas\"},{\"type\":\"ADD_TODO\",\"title\":\"saadfsadf\"},{\"type\":\"ADD_TODO\",\"title\":\"dfsadfasdf\"},{\"type\":\"REMOVE_TODO\",\"id\":3},{\"type\":\"REMOVE_TODO\",\"id\":1}]",
+	"preloadedState": "{\"counter\":0,\"todos\":[],\"lastUpdate\":null,\"messaging\":{\"newMessages\":5}}"
+}
