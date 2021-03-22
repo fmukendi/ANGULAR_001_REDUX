@@ -3,7 +3,7 @@ import { NgModule, isDevMode } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { NgRedux, NgReduxModule, DevToolsExtension } from "ng2-redux";
-import { fromJS, Map } from "immutable";
+// import { fromJS, Map } from "immutable"; // a lot of issues with this library
 
 import { IAppState, rootReducer, INITIAL_STATE } from "./store";
 
@@ -26,6 +26,8 @@ export class AppModule {
 
     var enhancers = isDevMode ? [devtools.enhancer()] : [];
 
-    ngRedux.configureStore(rootReducer, fromJS(INITIAL_STATE), [], enhancers);
+    // ngRedux.configureStore(rootReducer, fromJS(INITIAL_STATE), [], enhancers);
+
+    ngRedux.configureStore(rootReducer, INITIAL_STATE, [], enhancers);
   }
 }

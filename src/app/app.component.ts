@@ -1,6 +1,6 @@
 import { NgRedux, select } from "ng2-redux";
 import { Component } from "@angular/core";
-import { Map } from "immutable";
+// import { Map } from "immutable"; // a lot of issue with this library
 
 import { IAppState, rootReducer } from "./store";
 import { INCREMENT, ADD_TODO, TOGGLE_TODO, REMOVE_TODO } from "./action";
