@@ -16,7 +16,7 @@ export class AppComponent {
   //@select() counter;
   @select("counter") count;
   // @select(["counter"]) count;
-  // @select(["messaging", "newMessages"]) newMessages;
+  @select(["messaging", "newMessages"]) newMessages;
   // // messaging.newMessages
   // @select((s:IAppState) => s.counter) count;
   @select((s: IAppState) => s.messaging.newMessages) newMessagesCount;
